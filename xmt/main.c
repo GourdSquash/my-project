@@ -7,6 +7,12 @@ SDL_Renderer *renderer;
 int position = 0;
 int direction = 1;
 
+typedef struct {
+	struct UiNode *prev;
+	struct UiNode *next;
+	SDL_Rect rect;
+} UiNode;
+
 void game_loop(void)
 {
     SDL_Event event;
