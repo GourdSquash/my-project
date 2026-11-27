@@ -1,2 +1,2 @@
-jted: jted.c
-	$(CC) jted.c -o jted -Wall -Wextra -pedantic -std=c99
+jted: main.c
+	$(CC) main.c -o jted -Wall -Wextra -pedantic -std=c99
